@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Conheça a nossa equipe</title>
+        <link rel="stylesheet" href="equipe.css">
+        <style>
+            .detalhes {
+                display: none;
+                padding-top: 10px;
+                font-size: 14px;
+                color: #555;
+            }
+            .detalhes p {
+                margin: 5px 0;
+            }
+        </style>
+        <script>
+            function mostrarDetalhes(id) {
+                const detalhes = document.getElementById(id);
+                if (detalhes.style.display === "none" || detalhes.style.display === "") {
+                    detalhes.style.display = "block";
+                } else {
+                    detalhes.style.display = "none";
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <header>
+            <h2>Conheça a Nossa Equipe</h2>
+        </header>
+        <main>
+            <div class="row">
+                <div class="card">
+                    <img src="allan.png" alt="Foto Membro">
+                    <h2>Allan Lopes</h2>
+                    <p>Desenvolvedor Web</p>
+                    <button onclick="mostrarDetalhes('detalhes-allan')">DETALHES</button>
+                    <div id="detalhes-allan" class="detalhes">
+                        <p>Idade: 22 anos</p>
+                        <p>Desenvolvimento Web, Inteligência Artificial</p>
+                        <p>Interesses: Programação, Tecnologias emergentes</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="cleiton.png" alt="Foto Membro">
+                    <h2>Cleiton Aguiar</h2>
+                    <p>Desenvolvedor de Software</p>
+                    <button onclick="mostrarDetalhes('detalhes-cleiton')">DETALHES</button>
+                    <div id="detalhes-cleiton" class="detalhes">
+                        <p>Idade: 24 anos</p>
+                        <p>Desenvolvimento de Software, Banco de Dados</p>
+                        <p>Interesses: Segurança Cibernética, Backend</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="luisArtur.png" alt="Foto Membro">
+                    <h2>Luis Arthur</h2>
+                    <p>Analista de Sistema</p>
+                    <button onclick="mostrarDetalhes('detalhes-luis')">DETALHES</button>
+                    <div id="detalhes-luis" class="detalhes">
+                        <p>Idade: 21 anos</p>
+                        <p>Análise de Sistemas, Frontend</p>
+                        <p>Interesses: Design de Interfaces, Usabilidade</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="pedro.png" alt="Foto Membro">
+                    <h2>Pedro Oliveira</h2>
+                    <p>Engenheiro de Software</p>
+                    <button onclick="mostrarDetalhes('detalhes-pedro')">DETALHES</button>
+                    <div id="detalhes-pedro" class="detalhes">
+                        <p>Idade: 23 anos</p>
+                        <p>Engenharia de Software, Machine Learning</p>
+                        <p>Interesses: Inteligência Artificial, Automação</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card">
+                    <img src="stephanie.png" alt="Foto Membro">
+                    <h2>Stephanie Santos</h2>
+                    <p>Desenvolvedora Mobile</p>
+                    <button onclick="mostrarDetalhes('detalhes-stephanie')">DETALHES</button>
+                    <div id="detalhes-stephanie" class="detalhes">
+                        <p>Idade: 22 anos</p>
+                        <p>Programação Mobile, UI/UX</p>
+                        <p>Interesses: Aplicativos, Design Gráfico</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="wellington.png" alt="Foto Membro">
+                    <h2>Wellington Alves</h2>
+                    <p>Desenvolvedor de Jogos</p>
+                    <button onclick="mostrarDetalhes('detalhes-wellington')">DETALHES</button>
+                    <div id="detalhes-wellington" class="detalhes">
+                        <p>Idade: 25 anos</p>
+                        <p>Desenvolvimento de Jogos, Realidade Virtual</p>
+                        <p>Interesses: Programação de Jogos, Tecnologia Imersiva</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <button onclick="window.location.href='index.html';">Home</button>
+    </body>
+</html>
