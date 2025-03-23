@@ -1,0 +1,151 @@
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+    color: #fff;
+    box-sizing: border-box;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    height: 15vh;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav a {
+    color: #a855f7;
+    text-decoration: none;
+    font-weight: bold;
+    white-space: nowrap;
+  }
+
+  .navegacao {
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transform: translateY(-50%);
+  }
+
+  .navegacao button {
+    background-color: #a855f7;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navegacao button:disabled {
+    background-color: #555;
+    cursor: not-allowed;
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .home {
+    text-align: center;
+    height: 85vh;
+  }
+
+  .home h2 {
+    color: #a855f7;
+    font-size: 2.5em;
+  }
+
+  .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #a855f7;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+
+  .servicos,
+  .sobre,
+  .contato {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .servicos,
+  .contato {
+    background-color: #262626;
+  }
+
+  .servico {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+  }
+
+  .sobre a {
+    position: relative;
+    color: #a855f7;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .sobre a::after {
+    content: "→";
+    margin-left: 10px;
+    font-size: 1.5em;
+    color: #a855f7;
+    transition: transform 0.3s ease;
+  }
+
+  .sobre a:hover::after {
+    transform: translateX(5px);
+  }
+
+  form input,
+  form textarea {
+    display: block;
+    width: 400px;
+    margin: 10px auto;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+  }
+
+  form button {
+    padding: 10px 20px;
+    background-color: #a855f7;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
